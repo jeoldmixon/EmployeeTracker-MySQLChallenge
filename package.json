@@ -1,0 +1,30 @@
+{
+    "name": "employeetracker-mysqlchallenge",
+    "version": "1.0.0",
+    "description": "A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.",
+    "main": "index.js",
+    "directories": {
+        "lib": "lib"
+    },
+    "dependencies": {
+        "asciiart-logo": "^0.2.6",
+        "console.table": "^0.10.0",
+        "inquirer": "^7.3.3",
+        "mysql2": "^2.1.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jeoldmixon/EmployeeTracker-MySQLChallenge.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jeoldmixon/EmployeeTracker-MySQLChallenge/issues"
+    },
+    "homepage": "https://github.com/jeoldmixon/EmployeeTracker-MySQLChallenge#readme"
+}
