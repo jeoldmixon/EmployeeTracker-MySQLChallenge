@@ -138,8 +138,8 @@ const addDepartment = async () => {
   );
 };
 
-const addEmployee = async () => {
-  const userResponse = await inquirer.prompt([
+const addEmployee = () => {
+  return inquirer.prompt([
     {
       type: "input",
       name: "first_name",
@@ -153,16 +153,28 @@ const addEmployee = async () => {
     {
       type: "list",
       name: "role_id",
-      choices: ["Paramedic", "EMT", "Paramedic Manager"],
+      choices: 
+      [
+        "Paramedic", 
+        "EMT"
+      ],
     },
-  ]);
-  const response = connection.query(
-    `INSERT INTO employee (first_name,last_name,role_id)`,
-    function (err, res) {
-      if (err)
-        throw err;
-      viewEmployees();
-    }
-  );
+]).then((newEmployee) => {
+    const { first_name, last_name, role_id } = newEmployee
+     
+  })
+
 };
+
+
+// const response = connection.query(
+//   `INSERT INTO employee (first_name,last_name,role_id)`,
+//   function (err, res) {
+//     if (err)
+//       throw err;
+//     viewEmployees();
+//   }
+// );
+
+
 employeeDatabaseQuestions();

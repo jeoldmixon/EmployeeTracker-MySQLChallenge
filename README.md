@@ -1,3 +1,7 @@
+https://github.com/jeoldmixon/EmployeeTracker-MySQLChallenge
+
+https://drive.google.com/file/d/1T_TqAbvT8Q615Pz8xhelDk0NawS9k_3T/view
+
 # EmployeeTracker-MySQLChallenge
 A command-line application to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
@@ -27,3 +31,5 @@ WHEN I choose to update an employee role
 THEN I am prompted to select an employee to update and their new role and this information is updated in the database 
 
 # Mock-Up
+![example](./lib/12-sql-homework-demo-01.gif)
+

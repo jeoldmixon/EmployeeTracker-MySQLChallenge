@@ -23,14 +23,20 @@ INSERT INTO roles (title,salary,department_id) VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES
+--President
   ('Ronald', 'Firbank', 1,null),
+  --VP
   ('Virginia', 'Woolf', 2,1),
+  --Accounting
   ('Piers', 'Gaveston', 3,2),
   ('Charles', 'LeRoi', 4,3),
+  --HR
   ('Katherine', 'Mansfield', 5,2),
   ('Dora', 'Carrington', 6,5),
+  --IT
   ('Edward', 'Bellamy', 7,2),
   ('Montague', 'Summers', 8,7),
+  --Field 
   ('Octavia', 'Butler', 9,2),
   ('Unica', 'Zurn', 10,9),
   ('Justin','Smith',10,9),
